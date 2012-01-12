@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="keywords" content="" />
+	<meta name="description" content="" />
+	
+	<meta name="description" content="The portfolio page of Ian Watson, a Flash platform developer with over ten years' experience producing rich interactive content for blue chip clients." />
+	<meta name="keywords" content="Ian, Watson, portfolio, resume, CV, interactive, developer, Flash, Flex, AIR, ActionScript, PureMVC, Cairngorm, design patterns, OOP, RIA, minisite, API " />
+	<title>net.uk.sweet.ian | The portfolio of Ian Watson, an interactive developer</title>
+	
+	<link href="css/reset.css" rel="stylesheet" media="all" />
+	<link href="css/portfolio.css" rel="stylesheet" media="all" />
+	<link href="fancybox/jquery.fancybox-1.3.4.css" rel="stylesheet" media="screen" />
+	
+	<!-- script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script -->
+	<script src="scripts/jquery-1.3.2.js"></script>
+	<script src="scripts/jquery.log.js"></script>
+	<script src="fancybox/jquery.fancybox-1.3.4.pack.js"></script>
+	<script src="fancybox/jquery.easing-1.3.pack.js"></script>
+			
+	<!--[if IE]>
+		<script src= 
+			"http://html5shiv.googlecode.com/svn/trunk/html5.js">
+		</script>
+	<![endif]-->
+
+</head>
+<body>
+
+	<!-- The code -->
+	<div id="main">
+		
+		<!-- The top trump -->
+		<aside itemscope itemtype="http://data-vocabulary.org/Person">
+			<header>
+				<hgroup>
+					<h1 itemprop="name">Ian Watson</h1>
+					<h2 itemprop="title">Head of Interactive<br />
+					<span id="amaze"><a href="http://www.amaze.com" itemprop="affiliation">Amaze Ltd.</a></span></h2>
+				</hgroup>
+			</header>
+			<img itemprop="photo" src="images/profile.jpg" alt="It's another dynamic profile shot; Ian Watson, sledging" width="220" height="150" />
+			<dl>
+				<dt>Born</dt>
+			    <dd>1975</dd>
+			    <dt>Typing speed</dt>
+			    <dd>64 wpm</dd>
+			  	<dt>ActionScript</dt>
+			    <dd>10</dd>
+			  	<dt>Flex / AIR</dt>
+			    <dd>8</dd>
+			  	<dt>OOP</dt>
+			    <dd>9</dd>
+			  	<dt>Design patterns</dt>
+			    <dd>7</dd>
+			  	<dt>PureMVC / Cairngorm</dt>
+			    <dd>8</dd>
+			</dl>
+		</aside>
+				
+		<p><span class="identifier">package</span> net.uk.sweet.ian<br />{</p>
+		<div class="indent">
+
+			<span class="comment">//</span>
+			<h1>It's all about me, Ian Watson</h1>
+	
+			<p><span class="keyword">public</span> <span class="identifier">class</span> Me<br />{</p>
+	
+			<article class="indent description">
+				<span class="comment">//</span>
+				<h1>A bit of blurb about me</h1>
+				<p><span class="keyword">public</span> <span class="function">function</span> <span class="keyword">get</span> description():String <br />{</p>
+				<p class="indent"><span class="keyword">return</span> <span class="string">"An interactive developer with nearly 10 years' agency experience producing rich content for the Flash platform."</span>;</p>
+				<p>}</p>
+			</article>		
+			
+			<article class="indent">
+				<span class="comment">//</span>
+				<h1>Some of the clients I've worked with</h1>
+				<p><span class="keyword">public</span> <span class="function">function</span> <span class="keyword">get</span> clients():Array<br />{</p>
+				<p class="indent"><span class="keyword">return</span> [</p>
+				<ul>
+					<li>Lexus,</li> 
+					<li>Toyota,</li> 
+					<li>Coca-Cola,</li> 
+					<li>Sage,</li>
+					<li>Canon,</li> 
+					<li>NHS,</li>
+					<li>BECTA</li> 
+				</ul>
+				<p class="indent">];</p>
+				<p>}</p>
+			</article>
+			
+			<nav class="indent">
+				<span class="comment">//</span>
+				<h1>Some work I've done recently</h1>
+				<p><span class="keyword">public</span> <span class="function">function</span> <span class="keyword">get</span> portfolio():Array<br />{</p>
+				<p class="indent"><span class="keyword">return</span> [</p>
+				<ul>
+					<li><a href="#minisite" class="inline" rel="prefetch">Lexus CT200h Minisite</a>,</li>
+					<li><a href="#range" class="inline" rel="prefetch">Toyota Range Experience</a>,</li> 
+					<li><a href="#trace" class="inline" rel="prefetch">Trace Your Coke</a>,</li> 
+					<li><a href="#caption" class="inline" rel="prefetch">Strobe Caption Tool</a>,</li>
+					<li><a href="#explorer" class="inline" rel="prefetch">Lexus Car Explorer</a></li>
+				</ul>
+				<p class="indent">];</p>
+				<p>}</p>
+			</nav>
+			
+			<article class="indent">
+				<span class="comment">//</span>
+				<h1>You can stalk me here</h1>
+				<p><span class="keyword">public</span> <span class="function">function</span> <span class="keyword">get</span> links():Array<br />{</p>
+				<p class="indent"><span class="keyword">return</span> [</p>
+				<ul>
+					<li><a href="http://www.github.com/net-uk-sweet/">github</a>,</li>
+					<li><a href="http://www.linkedin.com/pub/ian-watson/37/bba/9b4">LinkedIn</a>,</li>
+					<li><a href="http://www.flickr.com/photos/7572102@N04/">Flickr</a>,</li> 
+					<li><a href="http://www.last.fm/user/littleboy147">Last FM</a>,</li> 
+					<li><a href="http://www.delicious.com/net.uk.sweet">Delicious</a></li> 
+				</ul>
+				<p class="indent">];</p>
+				<p>}</p>
+			</article>
+			
+			<article class="indent">
+				<span class="comment">//</span>
+				<h1>Or you could just get in touch directly</h1>
+				<p><span class="keyword">public</span> <span class="function">function</span> <span class="keyword">get</span> inTouch():Form<br />{</p>
+				<p class="indent"><span class="keyword">return new</span> <a href="#contact_form" id="form">ContactForm()</a>;</p>
+				<p>}</p>
+			</article>			
+			
+			<p>}</p>
+		</div>
+		<p>}</p>
+				
+		<footer><small>2011-04-14 20:39:45</small></footer>
+		
+	</div>
+	
+	<div class="portfolio">
+		<article id="minisite" class="fancy_wrapper">
+			<h1>Lexus CT200h Minisite</h1>
+			<a href="javascript:;" class="navigation close">[ x ]</a>
+			<div class="content">
+				<a href="javascript:;" class="navigation retracto">[ ? ]</a>
+				<table>
+					<thead>
+						<tr>
+							<th scope="col" class="description">Description</th>
+							<th scope="col">Technologies</th>
+							<th scope="col">My role</th>
+						</tr>
+					</thead>
+					<tbody>
+					<tr>
+						<td class="description">
+							<p>A minisite created to mark the launch of the Lexus CT200h.</p>
+						</td>
+						<td>	
+							<ul class="portfolio">
+								<li>ActionScript 3.0</li>
+								<li>PureMVC multicore</li>
+								<li>Flash 10 3D API</li>
+								<li>Flickr API</li>
+								<li>YouTube API</li>
+							</ul>				
+						</td>
+						<td>
+							<ul class="portfolio">
+								<li>Architecture</li>
+								<li>Build</li>
+							</ul>
+						</td>
+					</tr>
+					</tbody>
+				</table>
+			</div>
+			<a href="javascript:;" class="navigation pagination next">[ + ]</a>
+			<a href="javascript:;" class="navigation pagination prev">[ - ]</a>
+			<img src="images/ct_minisite.jpg" width="750" height="555" alt="Screenshot of the Lexus CT200h Minisite" />
+		</article>
+	</div>
+	
+	<div class="portfolio">
+		<article id="range" class="fancy_wrapper">
+			<h1>Toyota Range Experience</h1>
+			<a href="javascript:;" class="navigation close">[ x ]</a>
+			<div class="content">
+				<a href="javascript:;" class="navigation retracto">[ ? ]</a>
+				<table>
+					<thead>
+						<tr>
+							<th scope="col" class="description">Description</th>
+							<th scope="col">Technologies</th>
+							<th scope="col">My role</th>
+						</tr>
+					</thead>
+					<tbody>
+					<tr>
+						<td class="description">
+							<p>A full-screen experience designed to show off Toyota's range of cars.</p>
+							<p><a href="http://www.toyota-europe.com/range-tool/index.aspx">Visit site</a></p>
+						</td>
+						<td>	
+							<ul class="portfolio">
+								<li>ActionScript 3.0</li>
+								<li>MVC</li>
+							</ul>				
+						</td>
+						<td>
+							<ul class="portfolio">
+								<li>Architecture</li>
+								<li>Build</li>
+							</ul>
+						</td>
+					</tr>
+					</tbody>
+				</table>
+			</div>
+			<a href="javascript:;" class="navigation pagination next">[ + ]</a>
+			<a href="javascript:;" class="navigation pagination prev">[ - ]</a>
+			<a href="http://www.toyota-europe.com/range-tool/index.aspx"><img src="images/toyota_range.jpg" width="750" height="534" alt="Screenshot of the Toyota Range Experience" /></a>
+		</article>
+	</div>	
+	
+	<div class="portfolio">
+		<article id="trace" class="fancy_wrapper">
+			<h1>Trace Your Coke</h1>
+			<a href="javascript:;" class="navigation close">[ x ]</a>
+			<div class="content">
+				<a href="javascript:;" class="navigation retracto">[ ? ]</a>
+				<table>
+					<thead>
+						<tr>
+							<th scope="col" class="description">Description</th>
+							<th scope="col">Technologies</th>
+							<th scope="col">My role</th>
+						</tr>
+					</thead>
+					<tbody>
+					<tr>
+						<td class="description">
+							<p>A web-based tool which allows users to trace their drink back to its factory of origin.</p>
+							<p><a href="http://www.cokecorporateresponsibility.co.uk/journey-of-a-coke/trace-your-coke.aspx">Visit site</a></p>
+						</td>
+						<td>	
+							<ul class="portfolio">
+								<li>ActionScript 3.0</li>
+								<li>PureMVC</li>
+								<li>jQuery</li>
+								<li>Google maps API</li>
+							</ul>
+						</td>
+						<td>
+							<ul class="portfolio">
+								<li>Architecture</li>
+								<li>Build</li>
+							</ul>
+						</td>
+					</tr>
+					</tbody>
+				</table>
+			</div>
+			<a href="javascript:;" class="navigation pagination next">[ + ]</a>
+			<a href="javascript:;" class="navigation pagination prev">[ - ]</a>
+			<a href="http://www.cokecorporateresponsibility.co.uk/journey-of-a-coke/trace-your-coke.aspx"><img src="images/trace_coke.jpg" width="750" height="450" alt="Screenshot of Trace Your Coke" /></a>
+		</article>
+	</div>
+	
+	<div class="portfolio">
+		<article id="caption" class="fancy_wrapper">
+			<h1>Strobe Caption Tool</h1>
+			<a href="javascript:;" class="navigation close">[ x ]</a>
+			<div class="content">
+				<a href="javascript:;" class="navigation retracto">[ ? ]</a>
+				<table>
+					<thead>
+						<tr>
+							<th scope="col" class="description">Description</th>
+							<th scope="col">Technologies</th>
+							<th scope="col">My role</th>
+						</tr>
+					</thead>
+					<tbody>
+					<tr>
+						<td class="description">
+							<p>A desktop tool which allows content editors to create subtitles and annotations for a customised version of Adobe's Strobe media playback component.</p>
+						</td>
+						<td>	
+							<ul class="portfolio">
+								<li>Flex</li>
+								<li>AIR</li>
+								<li>ActionScript 3.0</li>
+								<li>OSMF</li>
+								<li>PureMVC</li>
+							</ul>				
+						</td>
+						<td>
+							<ul class="portfolio">
+								<li>IA</li>
+								<li>Design</li>
+								<li>Architecture</li>
+								<li>Build</li>
+							</ul>
+						</td>
+					</tr>
+					</tbody>
+				</table>
+			</div>
+			<a href="javascript:;" class="navigation pagination next">[ + ]</a>
+			<a href="javascript:;" class="navigation pagination prev">[ - ]</a>
+			<img src="images/caption_tool.jpg" width="750" height="500" alt="Screenshot of the Strobe Caption Tool" />
+		</article>
+	</div>
+	
+	<div class="portfolio">
+		<article id="explorer" class="fancy_wrapper">
+			<h1>Lexus Car Explorer</h1>
+			<a href="javascript:;" class="navigation close">[ x ]</a>
+			<div class="content">
+				<a href="javascript:;" class="navigation retracto">[ ? ]</a>
+				<table>
+					<thead>
+						<tr>
+							<th scope="col" class="description">Description</th>
+							<th scope="col">Technologies</th>
+							<th scope="col">My role</th>
+						</tr>
+					</thead>
+					<tbody>
+					<tr>
+						<td class="description">
+							<p>A web-based tool which allows users to explore the exterior and interior of a car, configure the colors, wheels, upholstery and inlays, and learn about its features.</p>
+							<p><a href="http://www.lexus.eu/range/ct/ct-200h/explore.aspx">Visit site</a></p>
+						</td>
+						<td>	
+							<ul class="portfolio">
+								<li>ActionScript 3.0</li>
+								<li>PureMVC multicore</li>
+							</ul>				
+						</td>
+						<td>
+							<ul class="portfolio">
+								<li>Architecture</li>
+								<li>Build</li>
+							</ul>
+						</td>
+					</tr>
+					</tbody>
+				</table>
+			</div>
+			<a href="javascript:;" class="navigation pagination next">[ + ]</a>
+			<a href="javascript:;" class="navigation pagination prev">[ - ]</a>
+			<a href="http://www.lexus.eu/range/ct/ct-200h/explore.aspx"><img src="images/car_explorer.jpg" width="750" height="305" alt="Screenshot of the Lexus Car Explorer" /></a>
+		</article>
+	</div>
+
+	<!-- Contact me form -->
+	<section class="form">
+		<div id="contact_form" class="fancy_wrapper">
+			<h1>Send me a message</h1>
+			<a href="javascript:;" class="navigation close">[ x ]</a>
+			<form method="post" action="#">
+			    <p class="form_output" id="error_name">Error: variable $your_name is not defined</p>
+			    <p class="form_output" id="error_email">Error: variable $your_email is not defined</p>
+			    <p class="form_output" id="error_message">Error: variable $your_message is not defined</p>
+			    <p class="form_output" id="send_success">Success: your message was sent</p>
+			    <p class="form_output" id="send_fail">Error: form could not be sent</p>					      
+				<fieldset>
+					<label for="contact_name">$your_name</label>
+					<input type="text" id="contact_name" name="contact_name" size="46" />
+
+					<label for="contact_email">$your_email</label>
+					<input type="email" id="contact_email" name="contact_email" size="46" />
+
+					<label for="contact_message">$your_message</label>
+					<textarea id="contact_message" name="contact_message" rows="10" cols="44"></textarea>
+					
+					<a class="navigation submit" href="javascript:;">[ submit ]</a>
+				</fieldset>
+			</form>
+		</div>
+	</section>		
+	
+	<script>
+		
+		//console.log("hello world");
+		$(".fancybox").fancybox();
+			
+		$(".inline").fancybox({
+			'scrolling'			: 'no',
+			'titleShow'			: false,
+			'height'			: 'auto',
+			'showCloseButton'	: false,
+			'showNavArrows'		: false,
+			'cyclic'			: true,
+			'onStart'			: function() {
+				
+				$("div.portfolio").show();
+	
+				$("div.content").each(function() {
+					$this = $(this);
+					$retracto = $this.children("a.retracto");
+					
+					var symbol;
+					var y;
+					
+					if ($hidden) {
+						symbol = "[ ? ]";
+						y = -$this.height() + $retracto.height();
+					} else {
+						symbol = "[ v ]";
+						y = 0;						
+					}
+	
+					$this.css({'bottom': y});
+					$retracto.text(symbol);		
+				});
+							
+				$("div.portfolio").hide();
+				$(".pagination").hide();
+			}
+		});
+
+		$("#form").fancybox({
+			'scrolling'			: 'no',
+			'titleShow'			: false,
+			'height'			: 'auto',
+			'showCloseButton'	: false,
+			'onClosed'			: function() {
+		   		$(".form_output").hide();
+		   		$(":input").val("").attr('disabled', false);
+		   		$("a.submit").show();
+			}
+		});
+		
+		$(".form_output").hide();
+		
+		$("a.submit").click(function() {
+			
+			var id = "";
+			
+			var name = $("#contact_name").val(); 
+			var email = $("#contact_email").val();
+			var message = $("#contact_message").val();
+			
+			if (name.length < 1) {
+				id = "#error_name";
+			} else if (email.length < 1) {
+				id = "#error_email";
+			} else if (message.length < 1) {
+				id = "#error_message";
+			} 
+			
+			if (id != "") {
+			    $(id).fadeIn("slow");
+			    return false;
+			} else {
+				//$.fancybox.showActivity();
+				var inputs = $(":input");
+				inputs.attr('disabled', true);
+				$(this).hide();
+				$.ajax({
+					type	: "POST",
+					cache	: false,
+					url		: "scripts/Contact.php",
+					data	: "name=" + name + "&email=" + email + "&message=" + message,
+					success: function(data) {
+						var id = (data == "true") ? "#send_success" : "#send_fail";
+						$.fancybox.hideActivity();
+						$(id).fadeIn("slow");
+						/*inputs.attr('disabled', false);*/
+						inputs.val("");
+					}
+				});
+			
+				return false;				
+			}
+		});
+	
+		$(":input").focus(function() {
+			$(".form_output").fadeOut("fast");
+		});
+	
+		$hidden = true;
+		var y; 
+		var symbol;
+		
+		$('a.retracto').click(function() {
+			$this = $(this);
+			$hidden = !$hidden;
+			y = $hidden ? -$this.parent().height() + $this.height() : 0;
+			$('div.content').animate({
+				'bottom': y}, 
+				"slow",
+				function() {
+					$this.text($hidden ? "[ ? ]" : "[ v ]");
+				}
+			);
+		});
+		
+		$('a.close').click(function() {
+			$.fancybox.close();
+		});
+
+		$('a.next').click(function() {
+			$.fancybox.next();
+		});
+	
+		$('a.prev').click(function() {
+			$.fancybox.prev();
+		});	
+
+		$("article.fancy_wrapper").hover(
+			function(){
+				//console.log("show");
+				$('.pagination').show();	
+			},
+			function(){
+				//console.log("hide");
+				$('.pagination').hide();			
+			}
+		);
+	</script>
+	
+</body>
