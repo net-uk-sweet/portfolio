@@ -61,13 +61,13 @@
 			    <dd>64 wpm</dd>
 			  	<dt>ActionScript</dt>
 			    <dd>10</dd>
-			  	<dt>Flex / AIR</dt>
+			  	<dt>JavaScript</dt>
 			    <dd>8</dd>
 			  	<dt>OOP</dt>
 			    <dd>9</dd>
 			  	<dt>Design patterns</dt>
 			    <dd>7</dd>
-			  	<dt>PureMVC / Cairngorm</dt>
+			  	<dt>MV* frameworks</dt>
 			    <dd>8</dd>
 			</dl>
 		</aside>
@@ -84,19 +84,21 @@
 				<span class="comment">//</span>
 				<h1>A bit of blurb about me</h1>
 				<p><span class="keyword">public</span> <span class="function">function</span> <span class="keyword">get</span> description():String <br />{</p>
-				<p class="indent"><span class="keyword">return</span> <span class="string">"An interactive developer with nearly 10 years' agency experience producing rich content for the Flash platform."</span>;</p>
+				<p class="indent"><span class="keyword">return</span> <span class="string">"An interactive developer with over 10 years' agency experience producing rich content for the Flash platform."</span>;</p>
 				<p>}</p>
 			</article>		
 			
-			<article class="indent">
+			<article class="indent clients">
 				<span class="comment">//</span>
 				<h1>Some of the clients I've worked with</h1>
 				<p><span class="keyword">public</span> <span class="function">function</span> <span class="keyword">get</span> clients():Array<br />{</p>
 				<p class="indent"><span class="keyword">return</span> [</p>
-				<ul>
+				<ul class="inline">
 					<li>Lexus,</li> 
 					<li>Toyota,</li> 
 					<li>Coca-Cola,</li> 
+					<li>Asics,</li>
+					<li>Coats,</li>
 					<li>Sage,</li>
 					<li>Canon,</li> 
 					<li>NHS,</li>
@@ -108,12 +110,14 @@
 			
 			<nav class="indent">
 				<span class="comment">//</span>
-				<h1>Some work I've done recently</h1>
+				<h1>Some work I've done recently in my day job</h1>
 				<p><span class="keyword">public</span> <span class="function">function</span> <span class="keyword">get</span> portfolio():Array<br />{</p>
 				<p class="indent"><span class="keyword">return</span> [</p>
 				<ul>
 					<li><a href="#minisite" class="inline" rel="prefetch">Lexus CT200h Minisite</a>,</li>
 					<li><a href="#range" class="inline" rel="prefetch">Toyota Range Experience</a>,</li> 
+					<li><a href="#events" class="inline" rel="prefetch">Lexus Events App</a>,</li>
+					<li><a href="#shoe" class="inline" rel="prefetch">Asics Shoe Finder</a>,</li>
 					<li><a href="#trace" class="inline" rel="prefetch">Trace Your Coke</a>,</li> 
 					<li><a href="#caption" class="inline" rel="prefetch">Strobe Caption Tool</a>,</li>
 					<li><a href="#explorer" class="inline" rel="prefetch">Lexus Car Explorer</a></li>
@@ -122,21 +126,35 @@
 				<p>}</p>
 			</nav>
 			
-			<article class="indent">
+			<nav class="indent">
+				<span class="comment">//</span>
+				<h1>Some things I knocked together in my own time</h1>
+				<p><span class="keyword">public</span> <span class="function">function</span> <span class="keyword">get</span> demos():Array<br />{</p>
+				<p class="indent"><span class="keyword">return</span> [</p>
+				<ul>
+					<li><a href="http://net-uk-sweet.nodejitsu.com">Multi-player magnets</a>,</li>
+					<li><a href="http://ian.sweet.uk.net/puzzle">HTML 5 video puzzle</a></li>
+				</ul>
+				<p class="indent">];</p>
+				<p>}</p>
+			</nav>
+
+			<nav class="indent">
 				<span class="comment">//</span>
 				<h1>You can stalk me here</h1>
 				<p><span class="keyword">public</span> <span class="function">function</span> <span class="keyword">get</span> links():Array<br />{</p>
 				<p class="indent"><span class="keyword">return</span> [</p>
 				<ul>
 					<li><a href="https://www.github.com/net-uk-sweet/">github</a>,</li>
+					<li><a href="http://stackoverflow.com/users/1289388/net-uk-sweet">stackoverflow</a>,</li>
 					<li><a href="http://www.linkedin.com/pub/ian-watson/37/bba/9b4">LinkedIn</a>,</li>
-					<li><a href="http://www.flickr.com/photos/7572102@N04/">Flickr</a>,</li> 
-					<li><a href="http://www.last.fm/user/littleboy147">Last FM</a>,</li> 
+					<li><a href="http://www.flickr.com/photos/7572102@N04/">flickr</a>,</li> 
+					<li><a href="http://www.last.fm/user/net-uk-sweet">last.fm</a>,</li> 
 					<li><a href="http://www.delicious.com/net.uk.sweet">Delicious</a></li> 
 				</ul>
 				<p class="indent">];</p>
 				<p>}</p>
-			</article>
+			</nav>
 			
 			<article class="indent">
 				<span class="comment">//</span>
@@ -150,7 +168,7 @@
 		</div>
 		<p>}</p>
 				
-		<footer><small>2011-04-14 20:39:45</small></footer>
+		<footer><small>2013-04-26 00:50:45</small></footer>
 		
 	</div>
 	
@@ -185,6 +203,7 @@
 						<td>
 							<ul class="portfolio">
 								<li>Architecture</li>
+								<li>Technical management</li>
 								<li>Build</li>
 							</ul>
 						</td>
@@ -241,6 +260,96 @@
 	</div>	
 	
 	<div class="portfolio">
+		<article id="events" class="fancy_wrapper">
+			<h1>Lexus Events App</h1>
+			<a href="javascript:;" class="navigation close">[ x ]</a>
+			<div class="content">
+				<a href="javascript:;" class="navigation retracto">[ ? ]</a>
+				<table>
+					<thead>
+						<tr>
+							<th scope="col" class="description">Description</th>
+							<th scope="col">Technologies</th>
+							<th scope="col">My role</th>
+						</tr>
+					</thead>
+					<tbody>
+					<tr>
+						<td class="description">
+							<p>An iPad application used by Lexus representatives to capture customer details at car shows.</p>
+						</td>
+						<td>	
+							<ul class="portfolio">
+								<li>HTML 5</li>
+								<li>CSS3</li>
+								<li>JavaScript</li>
+								<li>Phonegap / Cordova</li>
+								<li>Require</li>
+								<li>Backbone</li>
+								<li>Marionette</li>
+								<li>jQuery Mobile</li>
+							</ul>				
+						</td>
+						<td>
+							<ul class="portfolio">
+								<li>Architecture</li>
+								<li>Build</li>
+							</ul>
+						</td>
+					</tr>
+					</tbody>
+				</table>
+			</div>
+			<a href="javascript:;" class="navigation pagination next">[ + ]</a>
+			<a href="javascript:;" class="navigation pagination prev">[ - ]</a>
+			<img src="images/lexus_events.jpg" width="562" height="700" alt="Screenshot of the Toyota Range Experience" />
+		</article>
+	</div>	
+
+	<div class="portfolio">
+		<article id="shoe" class="fancy_wrapper">
+			<h1>Asics Shoe Finder</h1>
+			<a href="javascript:;" class="navigation close">[ x ]</a>
+			<div class="content">
+				<a href="javascript:;" class="navigation retracto">[ ? ]</a>
+				<table>
+					<thead>
+						<tr>
+							<th scope="col" class="description">Description</th>
+							<th scope="col">Technologies</th>
+							<th scope="col">My role</th>
+						</tr>
+					</thead>
+					<tbody>
+					<tr>
+						<td class="description">
+							<p>A web application designed to help users choose the correct sports shoe based on their requirements.</p>
+						</td>
+						<td>	
+							<ul class="portfolio">
+								<li>HTML 5</li>
+								<li>CSS3</li>
+								<li>JavaScript</li>
+								<li>Angular</li>
+							</ul>				
+						</td>
+						<td>
+							<ul class="portfolio">
+								<li>Architecture</li>
+								<li>Build</li>
+							</ul>
+						</td>
+					</tr>
+					</tbody>
+				</table>
+			</div>
+			<a href="javascript:;" class="navigation pagination next">[ + ]</a>
+			<a href="javascript:;" class="navigation pagination prev">[ - ]</a>
+			<img src="images/shoe_finder.png" width="750" height="360" alt="Screenshot of the Asics Shoe Finder" />
+		</article>
+	</div>	
+
+	<div class="portfolio">
 		<article id="trace" class="fancy_wrapper">
 			<h1>Trace Your Coke</h1>
 			<a href="javascript:;" class="navigation close">[ x ]</a>
@@ -258,7 +367,6 @@
 					<tr>
 						<td class="description">
 							<p>A web-based tool which allows users to trace their drink back to its factory of origin.</p>
-							<p><a href="http://www.cokecorporateresponsibility.co.uk/journey-of-a-coke/trace-your-coke.aspx">Visit site</a></p>
 						</td>
 						<td>	
 							<ul class="portfolio">
@@ -348,7 +456,6 @@
 					<tr>
 						<td class="description">
 							<p>A web-based tool which allows users to explore the exterior and interior of a car, configure the colors, wheels, upholstery and inlays, and learn about its features.</p>
-							<p><a href="http://www.lexus.eu/range/ct/ct-200h/explore.aspx">Visit site</a></p>
 						</td>
 						<td>	
 							<ul class="portfolio">
@@ -359,6 +466,7 @@
 						<td>
 							<ul class="portfolio">
 								<li>Architecture</li>
+								<li>Technical management</li>
 								<li>Build</li>
 							</ul>
 						</td>
