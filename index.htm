@@ -49,8 +49,8 @@
 			<header>
 				<hgroup>
 					<h1 itemprop="name">Ian Watson</h1>
-					<h2 itemprop="title">Head of Interactive<br />
-					<span id="amaze"><a href="http://www.amaze.com" itemprop="affiliation">Amaze Ltd.</a></span></h2>
+					<h2 itemprop="title">Interactive developer<br />
+					<span id="amaze"><a itemprop="affiliation">sweetweb ltd.</a></span></h2>
 				</hgroup>
 			</header>
 			<img itemprop="photo" src="images/profile.jpg" alt="It's another dynamic profile shot; Ian Watson, sledging" width="220" height="150" />
@@ -84,7 +84,7 @@
 				<span class="comment">//</span>
 				<h1>A bit of blurb about me</h1>
 				<p><span class="keyword">public</span> <span class="function">function</span> <span class="keyword">get</span> description():String <br />{</p>
-				<p class="indent"><span class="keyword">return</span> <span class="string">"An interactive developer with over 10 years' agency experience producing rich content for the Flash platform."</span>;</p>
+				<p class="indent"><span class="keyword">return</span> <span class="string">"An interactive developer with 13 years' experience producing rich content with the Flash platform and open web technologies."</span>;</p>
 				<p>}</p>
 			</article>		
 			
@@ -102,7 +102,8 @@
 					<li>Sage,</li>
 					<li>Canon,</li> 
 					<li>NHS,</li>
-					<li>BECTA</li> 
+					<li>BECTA,</li>
+					<li>Bet365</li> 
 				</ul>
 				<p class="indent">];</p>
 				<p>}</p>
@@ -110,13 +111,14 @@
 			
 			<nav class="indent">
 				<span class="comment">//</span>
-				<h1>Some work I did recently in my day job</h1>
+				<h1>Some work I did in my day job</h1>
 				<p><span class="keyword">public</span> <span class="function">function</span> <span class="keyword">get</span> portfolio():Array<br />{</p>
 				<p class="indent"><span class="keyword">return</span> [</p>
 				<ul>
 					<li><a href="#minisite" class="inline" rel="prefetch">Lexus CT200h Minisite</a>,</li>
 					<li><a href="#range" class="inline" rel="prefetch">Toyota Range Experience</a>,</li> 
 					<li><a href="#events" class="inline" rel="prefetch">Lexus Events App</a>,</li>
+					<li><a href="#olympic" class="inline" rel="prefetch">Coca-Cola Olympic Zone</a>,</li>
 					<li><a href="#shoe" class="inline" rel="prefetch">Asics Shoe Finder</a>,</li>
 					<li><a href="#trace" class="inline" rel="prefetch">Trace Your Coke</a>,</li> 
 					<li><a href="#caption" class="inline" rel="prefetch">Strobe Caption Tool</a>,</li>
@@ -132,8 +134,8 @@
 				<p><span class="keyword">public</span> <span class="function">function</span> <span class="keyword">get</span> demos():Array<br />{</p>
 				<p class="indent"><span class="keyword">return</span> [</p>
 				<ul>
-					<li><a href="http://net-uk-sweet.nodejitsu.com">Multi-player magnets</a>,</li>
-					<li><a href="http://ian.sweet.uk.net/puzzle">HTML 5 video puzzle</a></li>
+					<li><a href="http://net-uk-sweet.nodejitsu.com">HTML5 multi-player magnets</a>,</li>
+					<li><a href="http://ian.sweet.uk.net/puzzle">HTML5 video puzzle</a></li>
 				</ul>
 				<p class="indent">];</p>
 				<p>}</p>
@@ -280,7 +282,7 @@
 						</td>
 						<td>	
 							<ul class="portfolio">
-								<li>HTML 5</li>
+								<li>HTML5</li>
 								<li>CSS3</li>
 								<li>JavaScript</li>
 								<li>Phonegap / Cordova</li>
@@ -307,6 +309,51 @@
 	</div>	
 
 	<div class="portfolio">
+		<article id="olympic" class="fancy_wrapper">
+			<h1>Coca-Cola Olympic Zone</h1>
+			<a href="javascript:;" class="navigation close">[ x ]</a>
+			<div class="content">
+				<a href="javascript:;" class="navigation retracto">[ ? ]</a>
+				<table>
+					<thead>
+						<tr>
+							<th scope="col" class="description">Description</th>
+							<th scope="col">Technologies</th>
+							<th scope="col">My role</th>
+						</tr>
+					</thead>
+					<tbody>
+					<tr>
+						<td class="description">
+							<p>An AIR application displayed on showcase screens at each of Coca-Cola's 22 sites in the UK, designed to engage their staff with the 2012 Olympics.</p>
+							<p><a href="http://www.amaze.com/case-studies/coke_internal_comms/coke_internal_comms.aspx">View case study</a></p>
+						</td>
+						<td>	
+							<ul class="portfolio">
+								<li>Flex</li>
+								<li>AIR</li>
+								<li>ActionScript 3.0</li>
+								<li>PureMVC</li>
+							</ul>				
+						</td>
+						<td>
+							<ul class="portfolio">
+								<li>Architecture</li>
+								<li>Technical management</li>
+								<li>Build</li>
+							</ul>
+						</td>
+					</tr>
+					</tbody>
+				</table>
+			</div>
+			<a href="javascript:;" class="navigation pagination next">[ + ]</a>
+			<a href="javascript:;" class="navigation pagination prev">[ - ]</a>
+			<img src="images/olympic_zone.jpg" width="750" height="572" alt="Photograph of the Coca-Cola Olympic Zone" />
+		</article>
+	</div>	
+
+	<div class="portfolio">
 		<article id="shoe" class="fancy_wrapper">
 			<h1>Asics Shoe Finder</h1>
 			<a href="javascript:;" class="navigation close">[ x ]</a>
@@ -323,12 +370,12 @@
 					<tbody>
 					<tr>
 						<td class="description">
-							<p>A web application designed to help users choose the correct sports shoe based on their requirements.</p>
+							<p>A web application designed to help users choose the correct running shoe based on their physical attributes and running style.</p>
 							<p><a href="http://www.asicsamerica.com/shoe-finder">Visit site</a></p>
 						</td>
 						<td>	
 							<ul class="portfolio">
-								<li>HTML 5</li>
+								<li>HTML5</li>
 								<li>CSS3</li>
 								<li>JavaScript</li>
 								<li>Angular</li>
@@ -367,7 +414,7 @@
 					<tbody>
 					<tr>
 						<td class="description">
-							<p>A web-based tool which allows users to trace their drink back to its factory of origin.</p>
+							<p>A web-based tool which allows users to trace their fizzy drink back to its factory of origin.</p>
 							<p><a href="http://www.coca-cola.co.uk/environment/trace-your-coke.html">Visit site</a></p>
 						</td>
 						<td>	
@@ -457,7 +504,7 @@
 					<tbody>
 					<tr>
 						<td class="description">
-							<p>A web-based tool which allows users to explore the exterior and interior of a car, configure the colors, wheels, upholstery and inlays, and learn about its features.</p>
+							<p>A web-based tool which allows users to explore the exterior and interior of a car, and configure the colors, wheels, upholstery and inlays.</p>
 						</td>
 						<td>	
 							<ul class="portfolio">
