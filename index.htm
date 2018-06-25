@@ -96,7 +96,7 @@
 				<ul class="inline">
 					<li>Lexus,</li> 
 					<li>Toyota,</li> 
-					<li>Hyundia,</li>
+					<li>Hyundai,</li>
 					<li>Coca-Cola,</li> 
 					<li>Pizza Hut,</li>
 					<li>Asics,</li>
@@ -122,14 +122,14 @@
 				<p><span class="keyword">public</span> <span class="function">function</span> <span class="keyword">get</span> portfolio():Array<br />{</p>
 				<p class="indent"><span class="keyword">return</span> [</p>
 				<ul>
-					<li><a href="#minisite" class="inline" rel="prefetch">Lexus CT200h Minisite</a>,</li>
-					<li><a href="#range" class="inline" rel="prefetch">Toyota Range Experience</a>,</li> 
-					<li><a href="#events" class="inline" rel="prefetch">Lexus Events App</a>,</li>
-					<li><a href="#olympic" class="inline" rel="prefetch">Coca-Cola Olympic Zone</a>,</li>
-					<li><a href="#shoe" class="inline" rel="prefetch">Asics Shoe Finder</a>,</li>
-					<li><a href="#trace" class="inline" rel="prefetch">Trace Your Coke</a>,</li> 
-					<li><a href="#caption" class="inline" rel="prefetch">Strobe Caption Tool</a>,</li>
-					<li><a href="#explorer" class="inline" rel="prefetch">Lexus Car Explorer</a></li>
+					<li><a href="#minisite" class="inline" rel="prefetch" data-portfolio>Lexus CT200h Minisite</a>,</li>
+					<li><a href="#range" class="inline" rel="prefetch" data-portfolio>Toyota Range Experience</a>,</li> 
+					<li><a href="#events" class="inline" rel="prefetch" data-portfolio>Lexus Events App</a>,</li>
+					<li><a href="#olympic" class="inline" rel="prefetch" data-portfolio>Coca-Cola Olympic Zone</a>,</li>
+					<li><a href="#shoe" class="inline" rel="prefetch" data-portfolio>Asics Shoe Finder</a>,</li>
+					<li><a href="#trace" class="inline" rel="prefetch" data-portfolio>Trace Your Coke</a>,</li> 
+					<li><a href="#caption" class="inline" rel="prefetch" data-portfolio>Strobe Caption Tool</a>,</li>
+					<li><a href="#explorer" class="inline" rel="prefetch" data-portfolio>Lexus Car Explorer</a></li>
 				</ul>
 				<p class="indent">];</p>
 				<p>}</p>
@@ -561,10 +561,7 @@
 	
 	<script>
 		
-		//console.log("hello world");
-		$(".fancybox").fancybox();
-			
-		$(".inline").fancybox({
+		$("[data-portfolio]").fancybox({
 			'scrolling'			: 'no',
 			'titleShow'			: false,
 			'height'			: 'auto',
