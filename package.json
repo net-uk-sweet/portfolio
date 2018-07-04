@@ -1,0 +1,19 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "My ancient portfolio page",
+  "main": "scripts/site.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/net-uk-sweet/portfolio.git"
+  },
+  "author": "Ian Watson",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/net-uk-sweet/portfolio/issues"
+  },
+  "homepage": "https://github.com/net-uk-sweet/portfolio#readme"
+}

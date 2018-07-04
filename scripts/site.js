@@ -1,21 +1,19 @@
-(function() {
+(function($) {
 
     $("[data-portfolio]").fancybox({
-        'scrolling'			: 'no',
-        'titleShow'			: false,
-        'height'			: 'auto',
-        'showCloseButton'	: false,
-        'showNavArrows'		: false,
-        'cyclic'			: true,
-        'onStart'			: function() {
+        "scrolling"			: "no",
+        "titleShow"			: false,
+        "height"			: "auto",
+        "showCloseButton"	: false,
+        "showNavArrows"		: false,
+        "cyclic"			: true,
+        "onStart"			: function() {
             
             $("div.portfolio").show();
 
             $("div.content").each(function() {
-                $this = $(this);
-                $retracto = $this.children("a.retracto");
-                
-                var symbol;
+                var $this = $(this);
+                var $retracto = $this.children("a.retracto");
                 var y;
                 
                 if ($hidden) {
@@ -26,7 +24,7 @@
                     y = 0;						
                 }
 
-                $this.css({'bottom': y});
+                $this.css({"bottom": y});
                 $retracto.text(symbol);		
             });
                         
@@ -36,13 +34,13 @@
     });
 
     $("#form").fancybox({
-        'scrolling'			: 'no',
-        'titleShow'			: false,
-        'height'			: 'auto',
-        'showCloseButton'	: false,
-        'onClosed'			: function() {
+        "scrolling"			: "no",
+        "titleShow"			: false,
+        "height"			: "auto",
+        "showCloseButton"	: false,
+        "onClosed"			: function() {
             $(".form_output").hide();
-            $(":input").val("").attr('disabled', false);
+            $(":input").val("").attr("disabled", false);
             $("a.submit").show();
         }
     });
@@ -71,7 +69,7 @@
         } else {
             //$.fancybox.showActivity();
             var inputs = $(":input");
-            inputs.attr('disabled', true);
+            inputs.attr("disabled", true);
             $(this).hide();
             $.ajax({
                 type	: "POST",
@@ -99,39 +97,39 @@
     var y; 
     var symbol;
 
-    $('a.retracto').click(function() {
-        $this = $(this);
+    $("a.retracto").click(function() {
+        var $this = $(this);
         $hidden = !$hidden;
         y = $hidden ? -$this.parent().height() + $this.height() : 0;
-        $('div.content').animate({
-            'bottom': y}, 
-            "slow",
-            function() {
-                $this.text($hidden ? "[ ? ]" : "[ v ]");
-            }
+        $("div.content").animate({
+            "bottom": y}, 
+        "slow",
+        function() {
+            $this.text($hidden ? "[ ? ]" : "[ v ]");
+        }
         );
     });
 
-    $('a.close').click(function() {
+    $("a.close").click(function() {
         $.fancybox.close();
     });
 
-    $('a.next').click(function() {
+    $("a.next").click(function() {
         $.fancybox.next();
     });
 
-    $('a.prev').click(function() {
+    $("a.prev").click(function() {
         $.fancybox.prev();
     });	
 
     $("article.fancy_wrapper").hover(
         function(){
             //console.log("show");
-            $('.pagination').show();	
+            $(".pagination").show();	
         },
         function(){
             //console.log("hide");
-            $('.pagination').hide();			
+            $(".pagination").hide();			
         }
     );
-}());
+}(window.jQuery));
